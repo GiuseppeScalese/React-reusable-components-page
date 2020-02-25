@@ -1,0 +1,124 @@
+// --------------------------------------------------
+// Scaffolding
+// --------------------------------------------------
+
+*,
+*:after,
+*:before {
+  /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
+  -webkit-box-sizing: border-box;
+  /* Firefox (desktop or Android) 28- */
+  -moz-box-sizing: border-box;
+  /* Firefox 29+, IE 8+, Chrome 10+, Safari 5.1+, Opera 9.5+, iOS 5+, Opera Mini Anything, Blackberry 10+, Android 4+ */
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-size: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body,
+html {
+  font-size: $base-font-size;
+}
+
+body {
+  @include font-smoothing();
+  line-height: 18px; // Change pixel to rem
+  background-color: $grey-primary;
+
+  &.is-fixed {
+    position: fixed;
+  }
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: '';
+  content: none;
+}
+
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 0;
+  margin: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+td,
+th {
+  text-align: left;
+  vertical-align: middle;
+}
+
+a,
+u {
+  cursor: pointer;
+  text-decoration: none;
+  color: $fade-grey;
+  @include text($text-size--x-small, $text-size--small, $text_line--medium);
+}
+
+a {
+  outline: none;
+}
+
+a img {
+  outline: none;
+}
+
+img {
+  border: 0;
+}
+
+a:hover {
+  color: #0D66E5; //	@include transition();
+}
+
+.wrapper-content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  width: 85%;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}

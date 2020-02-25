@@ -1,0 +1,12 @@
+@import '../../assets/styles/styles.scss';
+
+.Checkbox {
+  padding-bottom: 16px;
+
+  .checkbox-label {
+    &::before {
+      left: 30px;
+      top: 3px;
+    }
+  }
+}

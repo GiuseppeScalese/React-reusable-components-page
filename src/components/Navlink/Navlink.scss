@@ -1,0 +1,43 @@
+@import '../../assets/styles/styles.scss';
+
+.Navlink {
+  position: relative;
+  padding: 15px;
+  color: $grey-link;
+  @include text($text-size--small, $text-size--small-medium, $text_line--medium);
+
+  &__label {
+    padding-right: 5px;
+    vertical-align: top;
+  }
+
+  &--icon {
+    padding-left: 30px;
+  }
+
+  &--active {
+    font-weight: 600;
+    color: $fade-blue;
+
+    &::after {
+      content: url("../../assets/img/chevron-right.svg");
+      position: absolute;
+      right: 15px;
+    }
+  }
+
+  &:hover {
+    @include rounded-corners(4px);
+    background-color: $grey-link-hover;
+
+    &::after {
+      content: url("../../assets/img/chevron-right.svg");
+      position: absolute;
+      right: 15px;
+    }
+  }
+
+  .icon {
+    padding-right: 10px;
+  }
+}

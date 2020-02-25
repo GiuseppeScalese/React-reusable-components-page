@@ -1,0 +1,51 @@
+//Icons elements global
+.icon-analytics {
+  &::before {
+    content: url(../../img/analytics.svg);
+  }
+}
+
+.icon-dashboard {
+  &::before {
+    content: url(../../img/dashboard.svg);
+  }
+}
+
+.icon-library {
+  &::before {
+    content: url(../../img/library.svg);
+  }
+}
+
+.icon-authentiations {
+  &::before {
+    content: url(../../img/authentications.svg);
+  }
+}
+
+.icon-chevron-right {
+  &::before {
+    content: url(../../img/chevron-right.svg);
+  }
+}
+
+.icon-settings {
+  &::before {
+    content: url(../../img/settings.svg);
+  }
+}
+
+.icon-thunder{
+  &::before {
+    content: url(../../img/thunder.svg);
+  }
+}
+
+.icon-dashboard, .icon-settings, .icon-authentiations,.icon-library, .icon-analytics, .icon-chevron-right, .icon-thunder {
+  &::before {
+    position: relative;
+    top: 0;
+    height: 40px;
+    width: 40px;
+  }
+}

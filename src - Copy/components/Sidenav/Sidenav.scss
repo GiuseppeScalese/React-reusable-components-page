@@ -2,15 +2,14 @@
 
 .Sidenav {
   position: fixed;
-  width: 245px;
+  width: auto;
   height: 100%;
-  left: 0;
+  left: 0px;
   top: 0;
   padding: 24px;
   background-color: $white;
   display: flex;
   flex-direction: column;
-  border-right: 2px solid $grey-primary;
 
   &__top-img-section {
     display: flex;

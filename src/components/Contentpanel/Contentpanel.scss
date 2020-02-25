@@ -1,0 +1,72 @@
+@import '../../assets/styles/styles.scss';
+
+.Contentpanel {
+  h2 {
+    text-align: left;
+  }
+
+  &__wrapper {
+    background-color: $white;
+    padding: 24px;
+    @include rounded-corners(8px);
+  }
+
+  &__cards-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-top: 30px;
+
+    .Card {
+      margin-bottom: 15px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__panel-box {
+    display: flex;
+  }
+
+  &__panel-left {
+    flex: 0 0 30%;
+    text-align: left;
+    border-right: 1px solid $grey-primary;
+    padding-right: 20px;
+  }
+
+  &__panel-right {
+    flex: 1;
+    padding-left: 20px;
+  }
+
+  &__content {
+    padding: 25px 0;
+    border-bottom: 1px solid $grey-primary;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    h3 {
+      text-align: left;
+      padding-bottom: 20px;
+
+      .icon-arrow-down {
+        padding-right: 15px;
+      }
+    }
+
+    .Checkbox {
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+}

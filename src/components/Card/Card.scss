@@ -1,0 +1,58 @@
+@import '../../assets/styles/styles.scss';
+
+.Card {
+  border: 2px solid $fade-grey;
+  @include rounded-corners(4px);
+  padding: 10px 40px 10px 10px;
+  text-align: left;
+  position: relative;
+
+  &__row {
+    display: flex;
+    align-items: center;
+    padding-bottom: 8px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  .Card__row:last-child {
+    padding-bottom: 0;
+  }
+
+  .primaryText,
+  .secondaryText {
+    padding-left: 10px;
+  }
+
+  .primaryText {
+    font-weight: 600;
+  }
+
+  .secondaryText {
+    color: $fade-grey-2;
+    @include text($text-size--x-small, $text-size--small, $text_line--medium);
+  }
+
+  .icon-explore {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 12px;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+
+    &-box {
+      margin-left: 15px;
+    }
+
+    .primaryText {
+      padding-left: 0;
+    }
+  }
+}

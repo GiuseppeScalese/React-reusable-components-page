@@ -1,0 +1,17 @@
+@import '../../assets/styles/styles.scss';
+
+.Tag {
+  padding: 4px 6px;
+  color: $white;
+  font-weight: 600;
+  @include rounded-corners(4px);
+  @include text($text-size--x-small, $text-size--x-small, $text_line--medium);
+
+  &--blue {
+    background-color: $light-blue;
+  }
+
+  &--grey {
+    background-color: $light-grey;
+  }
+}
